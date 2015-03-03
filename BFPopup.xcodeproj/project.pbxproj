@@ -15,6 +15,7 @@
 		523F76181AA4BF6300873DB2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523F76161AA4BF6300873DB2 /* LaunchScreen.xib */; };
 		523F76241AA4BF6300873DB2 /* BFPopupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 523F76231AA4BF6300873DB2 /* BFPopupTests.m */; };
 		523F762F1AA4BF7300873DB2 /* BFPopUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 523F762E1AA4BF7300873DB2 /* BFPopUpView.m */; };
+		525A6C0C1AA649F80028EDD6 /* test.m in Sources */ = {isa = PBXBuildFile; fileRef = 525A6C0B1AA649F80028EDD6 /* test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		523F76231AA4BF6300873DB2 /* BFPopupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFPopupTests.m; sourceTree = "<group>"; };
 		523F762D1AA4BF7300873DB2 /* BFPopUpView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPopUpView.h; sourceTree = "<group>"; };
 		523F762E1AA4BF7300873DB2 /* BFPopUpView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPopUpView.m; sourceTree = "<group>"; };
+		525A6C0A1AA649F80028EDD6 /* test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		525A6C0B1AA649F80028EDD6 /* test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				523F760C1AA4BF6300873DB2 /* AppDelegate.m */,
 				523F760E1AA4BF6300873DB2 /* ViewController.h */,
 				523F760F1AA4BF6300873DB2 /* ViewController.m */,
+				525A6C0A1AA649F80028EDD6 /* test.h */,
+				525A6C0B1AA649F80028EDD6 /* test.m */,
 				523F76111AA4BF6300873DB2 /* Main.storyboard */,
 				523F76141AA4BF6300873DB2 /* Images.xcassets */,
 				523F76161AA4BF6300873DB2 /* LaunchScreen.xib */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525A6C0C1AA649F80028EDD6 /* test.m in Sources */,
 				523F76101AA4BF6300873DB2 /* ViewController.m in Sources */,
 				523F760D1AA4BF6300873DB2 /* AppDelegate.m in Sources */,
 				523F760A1AA4BF6300873DB2 /* main.m in Sources */,
@@ -418,6 +424,7 @@
 				523F76291AA4BF6300873DB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		523F762A1AA4BF6300873DB2 /* Build configuration list for PBXNativeTarget "BFPopupTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				523F762C1AA4BF6300873DB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

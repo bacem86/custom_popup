@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "BFPopUpView.h"
 
-@interface ViewController () <BFPopUpViewDelegate>
+@interface ViewController () <BFPopUpViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @end
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -70,11 +70,32 @@
 -(IBAction)showPooUp:(id)sender{
     
     BFPopUpView * p = [[BFPopUpView alloc] initWithParentViewController:self];
+    [p setTableViewDelegate:self];
+    [p setTableViewDataSourceDelegate:self];
+    [p setTitle:@"Title"];
+    [p setSubTitle:@"Sub Title"];
     p.delegate = self;
     //p.tableView.delegate = self;
     [p show];
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 4;
+}
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    static NSString * cellID = @"cellID";
+    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    if(!cell){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"item %li",(long)indexPath.row];
+    
+    return cell;
+    
+}
 -(void)popUpViewDismised:(BFPopUpView *)popUpView{
     
 }

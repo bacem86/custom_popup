@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>36FDE0C2-863F-4F28-B0D2-72711E652CF3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BFPopup</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1CBF021711BE2BDF171510DB79F1BA09EEC13437</key>
+		<string>https://github.com/telecom1986/custom_popup.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BFPopup.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1CBF021711BE2BDF171510DB79F1BA09EEC13437</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/telecom1986/custom_popup.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1CBF021711BE2BDF171510DB79F1BA09EEC13437</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1CBF021711BE2BDF171510DB79F1BA09EEC13437</string>
+			<key>IDESourceControlWCCName</key>
+			<string>custom_popup</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -137,6 +137,7 @@
     
     self.titleLabel = [[UILabel alloc] init];
     self.titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.titleLabel.numberOfLines = 0;
     [self.titleLabel setFont:[UIFont boldSystemFontOfSize:16.0]];
     self.titleLabel.backgroundColor = [UIColor whiteColor];
     self.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -146,6 +147,7 @@
     self.subTitleLabel = [[UILabel alloc] init];
     [self.subTitleLabel setFont:[UIFont boldSystemFontOfSize:14.0]];
     self.subTitleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    self.subTitleLabel.numberOfLines = 0;
     self.subTitleLabel.backgroundColor = [UIColor whiteColor];
     self.subTitleLabel.textAlignment = NSTextAlignmentCenter;
     [self.subTitleLabel setText:self.subTitle];
@@ -217,7 +219,7 @@
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.topView
                                                      attribute:NSLayoutAttributeHeight
-                                                     relatedBy:NSLayoutRelationEqual
+                                                     relatedBy:NSLayoutRelationGreaterThanOrEqual
                                                         toItem:self.topView.superview
                                                      attribute:NSLayoutAttributeHeight
                                                     multiplier:0.15
@@ -286,12 +288,12 @@
 -(void)configureSubTitleLabel{
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.subTitleLabel
-                                                     attribute:NSLayoutAttributeTop
+                                                     attribute:NSLayoutAttributeBottom
                                                      relatedBy:NSLayoutRelationEqual
                                                         toItem:self.subTitleLabel.superview
-                                                     attribute:NSLayoutAttributeCenterY
+                                                     attribute:NSLayoutAttributeBottom
                                                     multiplier:1.0
-                                                      constant:0]];
+                                                      constant:-defaultMargin]];
     
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self.subTitleLabel
                                                      attribute:NSLayoutAttributeTop
